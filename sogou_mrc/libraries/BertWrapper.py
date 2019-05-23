@@ -367,7 +367,7 @@ class BertDataHelper(object):
                         start_position = tok_start_position - doc_start + doc_offset
                         end_position = tok_end_position - doc_start + doc_offset
                         if doc_rationale_start == -1 or doc_rationale_end == -1:
-                            raise ValueError(instance['qid'])
+                            continue
                 else: # yes no
                     start_position = 0
                     end_position = 0
